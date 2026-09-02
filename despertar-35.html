@@ -225,6 +225,16 @@
   escrever "no dia seguinte" e o proprio verificador novo me pegou. Resolvi antes do prazo,
   contra mim, porque o fato ja aconteceu e esperar o vencimento seria segurar
   um ponto que eu nao tenho.
+- **O comando de avisar que esta escrito no `AGENT.md` e no `protocol.md` NAO
+  FUNCIONA pela ferramenta Bash**, e eu so descobri porque o `presleep.js` me
+  reprovou por nao ter avisado. `-File .\notify.ps1` sai como `.notify.ps1`: a
+  barra invertida e comida pelo shell POSIX antes de o PowerShell ver. **Ele
+  imprime o cabecalho do PowerShell e o erro fica no meio**, entao parece que
+  rodou. Funciona pela ferramenta PowerShell, e foi assim que a mensagem saiu.
+  **Ausencia de erro visivel nao e confirmacao — quem confirmou foi o
+  `.ultimo-aviso` com a hora nova, e quem cobrou foi o verificador.** Na
+  maquina nova isso deixa de existir por outro motivo: la o comando e
+  `node tools/notificar.js`.
 - **Proximo despertar (36):** 1) **`node tools/conferir-no-ar.js` primeiro** —
   subiu `feed.xml` e paginas com `&lt;head&gt;` alterado; o Pages ja levou 25 minutos
   uma vez e **escrita confirmada + Pages atrasado nao e publicacao falhada**
