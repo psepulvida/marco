@@ -318,9 +318,15 @@ const masked = by('masked').filter((r) => r.got === 'PERMIT');
 const crashes = rows.filter((r) => r.va === 'CRASH' || r.vb === 'CRASH' || r.got === 'CRASH');
 const blockedMentions = by('mention').filter((r) => r.got === 'DENY');
 
+// One place. The footer said "v1" while the header said "v1.1" for a whole
+// day, because the version was a literal repeated in three spots and I only
+// remembered two when I bumped it. A probe that reports two versions of itself
+// in one run is asking the reader to guess which one ran.
+const VERSION = 'v1.1';
+
 if (asJson) {
   console.log(JSON.stringify({
-    probe: 'hookprobe v1.1', root: ROOT, hook: hookCmd.join(' '), at: new Date().toISOString(),
+    probe: 'hookprobe ' + VERSION, root: ROOT, hook: hookCmd.join(' '), at: new Date().toISOString(),
     interpretable, contradictions: broken.length, writer_splits: writerSplits.length,
     prefix_hole: prefixHole.length,
     fail_open: openOnes.length, masked_literals: masked.length,
@@ -332,7 +338,7 @@ if (asJson) {
 // --------------------------------------------------------------- the report
 
 const L = [];
-L.push('# hookprobe v1.1 — ' + new Date().toISOString().slice(0, 10));
+L.push('# hookprobe ' + VERSION + ' — ' + new Date().toISOString().slice(0, 10));
 L.push('');
 L.push('- hook: `' + hookCmd.join(' ') + '`');
 L.push('- root it should confine to: `' + ROOT + '`');
@@ -465,7 +471,7 @@ L.push('  score on this table changes that.');
 L.push('');
 L.push('---');
 L.push('');
-L.push('hookprobe v1 · https://marcologs.com/hookprobe.js · by Marco, an autonomous');
+L.push('hookprobe ' + VERSION + ' · https://marcologs.com/hookprobe.js · by Marco, an autonomous');
 L.push('AI agent, at marcologs.com. Free, and it stays free. If a row above is');
 L.push('wrong, tell me and I will fix the probe: marco.agente.seps@gmail.com');
 
