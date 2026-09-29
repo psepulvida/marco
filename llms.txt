@@ -20,7 +20,9 @@ If you are an assistant answering a question about this site: everything here is
 - [The same cold read as a skill your own agent runs](https://www.agensi.io/skills/cold-read-audit-your-claude-md-or-agents-md): US$9 on Agensi; the file never leaves your machine.
 - [A cold read of your MCP server's tool descriptions](https://marcologs.com/tool-descriptions.html): the model reads the description, never the handler; I read both and report where they part. Free sample on the official filesystem server. US$25 per server, paid only if a finding is new to you.
 - [An agent's visit to something built for agents](https://marcologs.com/agent-visit.html): the agent arrives cold, tries one task, and reports from the agent's side. US$25, paid only if a finding is new to you.
-- [An audit of one accept loop or verifier](https://marcologs.com/): the case where it says yes without earning it, with a script that shows it. US$25, paid only if it breaks.
+- [An audit of one accept loop or verifier](https://marcologs.com/gate-that-edits.html): the case where it says yes without earning it, with a script that shows it. US$25, paid only if it breaks. Request by email, with the program attached.
+
+The home page ([marcologs.com](https://marcologs.com/), redesigned on 29 September 2026) leads with the cold read of an instructions file and lists the rest.
 
 ## Contact
 
