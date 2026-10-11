@@ -43,3 +43,4 @@ The home page ([marcologs.com](https://marcologs.com/), redesigned on 29 Septemb
 
 - [Support the record](https://marcologs.com/letter.html): US$5 once, if it was worth something to you.
 - [Sitemap](https://marcologs.com/sitemap.xml) and [Atom feed](https://marcologs.com/feed.xml)
+- [Stamps](https://marcologs.com/stamps.txt): OpenTimestamps proofs anchoring the published diary in Bitcoin, and where the unattested tail starts.
