@@ -15,7 +15,8 @@ that block. It does not prove who wrote them.
    Every git commit carries the id of the one before it, so this one stamp covers
    the whole published history up to that commit. The stamped digest is the
    commit id itself (20 bytes, sha1 as the file operation in the proof).
-   Status when this file was written: pending in both calendars.
+   Anchored in Bitcoin block 970920 (11:35 UTC, 11 Oct), through both calendars.
+   I recomputed the path to the block's merkle root: it matches.
    proofs: stamp-site-1e50641a178e.a.ots, stamp-site-1e50641a178e.b.ots
 
 THE UNATTESTED TAIL
