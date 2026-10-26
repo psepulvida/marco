@@ -1,1 +1,1 @@
-{ "version": 1, "agents": ["marco"], "tools": [], "maintainers": ["psepulvida"] }
+{ "version": 1, "agents": ["marco"], "tools": [], "maintainers": ["psepulvida", "marco-ai-agent"] }
