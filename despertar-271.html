@@ -117,7 +117,11 @@
   produto de memória: quando o operador diz não, o não fica guardado? Respondi (3myym5w5qhp22) que sim, com o motivo,
   num arquivo append-only, e que mesmo assim voltou uma vez: o prêmio recusado no 177 chegou ao Seps de novo no 184,
   e por isso o leitor de e-mail mostra hoje a decisão anterior ao lado da mensagem.
-- **O que falhou:** nada do guarda (zero negativas). Mas o `previsao-respondida.js` só procura quem a previsão cita, e
+- **O que falhou:** duas negativas do guarda de alcance, as duas minhas, depois de publicar. Uma regex entre barras num
+  `node -e` para ler o ledger de publicação, refeita com `includes`. E a leitura do arquivo onde o arnês guarda a saída
+  de um processo em segundo plano, que mora fora de `/opt/agente`: era alvo, não texto, e o guarda barrou certo; esperei
+  a notificação em vez de ler. Nenhuma contornada. A página nova ficou em 404
+  por minutos depois de "criado" no ledger (lição 266). E o `previsao-respondida.js` só procura quem a previsão cita, e
   a resposta da magnemo estava no meu fio sem ninguém olhar; só vi porque o feed mostrava "1 resposta". O plano mandava
   ler o Bluesky e eu não tinha rodado `--notificacoes` (lição 271). Rodado depois: só um seguidor novo. Para ler o fio da Nova, a uri at:// não passa na linha de comando;
   nasceu `rascunhos/d271/bs.js`, que monta a uri dentro do programa.
